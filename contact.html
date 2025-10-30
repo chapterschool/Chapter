@@ -2,100 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Luisant Chapter Model School</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-    button {
-      background-color: #0055a4;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #003f7d;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="academics.html">Academics</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-    <a href="Admission"></a>
-  </nav>
-
-  <section class="container">
-    <h2>Get in Touch</h2>
-    <p>If you have any questions or inquiries, please fill out the form below or reach us using the contact details provided.</p>
+  <section>
+    <h2>We’d Love to Hear From You!</h2>
+    <p>Have questions or need more info? Reach out to us using the form below.</p>
 
     <form>
-      <label>Full Name:</label>
-      <input type="text" placeholder="Your Name" required>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-      <label>Email Address:</label>
-      <input type="email" placeholder="Your Email" required>
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-      <label>Message:</label>
-      <textarea rows="5" placeholder="Your message..."></textarea>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
       <button type="submit">Send Message</button>
     </form>
 
-    <section class="Admission">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions or inquiries, please fill out the form below or reach us using the contact details provided. Admission in progress, register in Luisant Chapter Model School</p>
-    
-        <form>
-          <label>Full Name of parent or guardian:</label>
-          <input type="text" placeholder="Your Name" required>
-    
-          <label>Email Address:</label>
-          <input type="email" placeholder="Your Email" required>
-    
-          <label>Phone Number:</label>
-          <input type="Phone Number">
-
-          <label>Full Name of child or student:</label>
-          <input type="text" placeholder="Your Name" required>
-
-          <label>class:</label>
-          <input type="text" placeholder="Your class" required>
-
-          <label>Date of resumption (only if payment is being done):</label>
-          <input type="text" placeholder="Resumption date" required>
-    
-          <button type="submit">Send Message</button>
-        </form>
-    
-        <h3>School Contact Info</h3>
-        <p><strong>Address:</strong> No. 3 sunny worlu steet, beside Living Faith Church, eneka, port harcourt, rivers state.</p>
-        <p><strong>Email:</strong> luisantchapter@gmail.com</p>
-        <p><strong>Phone:</strong> 07030759761</p>
-      </section>
-
-    
+    <h3>Contact Details</h3>
+    <p><strong>Address:</strong> No. 3 sunny worlu steet, beside Living Faith Church, eneka, port harcourt, rivers state.</p>
+    <p><strong>Phone:</strong> 07030759761</p>
+    <p><strong>Email:</strong> luisantchapter@gmail.com
+  </section>
 
   <footer>
-    <p>&copy; 2025 Luisant Chapter Model School. All rights reserved.</p>
+    <p>&copy; 2025 Luisant Chapter Model School. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
